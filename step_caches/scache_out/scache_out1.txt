@@ -1,0 +1,2 @@
+[H[2J[3J[H[2J[3JWelcome to SCache simulator v2.7!
+Opening attrib storage... 100000 200000 300000 400000 500000 600000 

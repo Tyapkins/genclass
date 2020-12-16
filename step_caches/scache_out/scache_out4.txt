@@ -1,0 +1,400 @@
+[H[2J[3J[H[2J[3JWelcome to SCache simulator v2.7!
+Opening attrib storage... 100000 200000 300000 400000 500000 600000 OK
+Initializing cache... [H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3JOK
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.4%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.4%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.3%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.3%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.4%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.4%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.3%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.2%)
+
+### SEGMENT STATE ###
+S[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3J[H[2J[3Jegment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.7%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.5%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 88.1%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.1%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.6%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.1%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 97.8%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.4%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 98.2%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 99.9%)
+
+### SEGMENT STATE ###
+Segment 0: []
+Size: 100% (used 100%)
+
+Total BHR: 0.008
