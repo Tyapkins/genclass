@@ -1,0 +1,3 @@
+[submodule "scache"]
+	path = scache
+	url = https://github.com/himotokun/scache
