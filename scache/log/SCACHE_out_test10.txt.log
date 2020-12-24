@@ -1,0 +1,9 @@
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test10.txt 
+
+Total BHR: 0.002
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test10.txt 
+
+Total BHR: 0.013
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test10.txt 
+
+Total BHR: 1.000

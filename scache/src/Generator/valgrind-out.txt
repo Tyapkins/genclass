@@ -1,0 +1,168 @@
+==9161== Memcheck, a memory error detector
+==9161== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9161== Using Valgrind-3.15.0-608cb11914-20190413 and LibVEX; rerun with -h for copyright info
+==9161== Command: ./generator
+==9161== Parent PID: 4803
+==9161== 
+--9161-- 
+--9161-- Valgrind options:
+--9161--    --leak-check=full
+--9161--    --show-leak-kinds=all
+--9161--    --track-origins=yes
+--9161--    --verbose
+--9161--    --log-file=valgrind-out.txt
+--9161-- Contents of /proc/version:
+--9161--   Linux version 5.4.0-52-generic (buildd@lgw01-amd64-060) (gcc version 9.3.0 (Ubuntu 9.3.0-17ubuntu1~20.04)) #57-Ubuntu SMP Thu Oct 15 10:57:00 UTC 2020
+--9161-- 
+--9161-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand
+--9161-- Page sizes: currently 4096, max supported 4096
+--9161-- Valgrind library directory: /usr/lib/x86_64-linux-gnu/valgrind
+--9161-- Reading syms from /home/tyapkins/Desktop/CLScache/scache/src/Generator/generator
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/ld-2.31.so
+--9161--   Considering /usr/lib/x86_64-linux-gnu/ld-2.31.so ..
+--9161--   .. CRC mismatch (computed 6cded93a wanted 1af57820)
+--9161--   Considering /lib/x86_64-linux-gnu/ld-2.31.so ..
+--9161--   .. CRC mismatch (computed 6cded93a wanted 1af57820)
+--9161--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/ld-2.31.so ..
+--9161--   .. CRC is valid
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/memcheck-amd64-linux
+--9161--    object doesn't have a symbol table
+--9161--    object doesn't have a dynamic symbol table
+--9161-- Scheduler: using generic scheduler lock implementation.
+--9161-- Reading suppressions file: /usr/lib/x86_64-linux-gnu/valgrind/default.supp
+==9161== embedded gdbserver: reading from /tmp/vgdb-pipe-from-vgdb-to-9161-by-tyapkins-on-???
+==9161== embedded gdbserver: writing to   /tmp/vgdb-pipe-to-vgdb-from-9161-by-tyapkins-on-???
+==9161== embedded gdbserver: shared mem   /tmp/vgdb-pipe-shared-mem-vgdb-9161-by-tyapkins-on-???
+==9161== 
+==9161== TO CONTROL THIS PROCESS USING vgdb (which you probably
+==9161== don't want to do, unless you know exactly what you're doing,
+==9161== or are doing some strange experiment):
+==9161==   /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=9161 ...command...
+==9161== 
+==9161== TO DEBUG THIS PROCESS USING GDB: start GDB like this
+==9161==   /path/to/gdb ./generator
+==9161== and then give GDB the following command
+==9161==   target remote | /usr/lib/x86_64-linux-gnu/valgrind/../../bin/vgdb --pid=9161
+==9161== --pid is optional if only one valgrind process is running
+==9161== 
+--9161-- REDIR: 0x4022d80 (ld-linux-x86-64.so.2:strlen) redirected to 0x580c9ce2 (???)
+--9161-- REDIR: 0x4022b50 (ld-linux-x86-64.so.2:index) redirected to 0x580c9cfc (???)
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_core-amd64-linux.so
+--9161--    object doesn't have a symbol table
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so
+--9161--    object doesn't have a symbol table
+==9161== WARNING: new redirection conflicts with existing -- ignoring it
+--9161--     old: 0x04022d80 (strlen              ) R-> (0000.0) 0x580c9ce2 ???
+--9161--     new: 0x04022d80 (strlen              ) R-> (2007.0) 0x0483f060 strlen
+--9161-- REDIR: 0x401f560 (ld-linux-x86-64.so.2:strcmp) redirected to 0x483ffd0 (strcmp)
+--9161-- REDIR: 0x40232e0 (ld-linux-x86-64.so.2:mempcpy) redirected to 0x4843a20 (mempcpy)
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28
+--9161--    object doesn't have a symbol table
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/libgcc_s.so.1
+--9161--    object doesn't have a symbol table
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/libc-2.31.so
+--9161--   Considering /usr/lib/x86_64-linux-gnu/libc-2.31.so ..
+--9161--   .. CRC mismatch (computed cd1655d1 wanted 09373696)
+--9161--   Considering /lib/x86_64-linux-gnu/libc-2.31.so ..
+--9161--   .. CRC mismatch (computed cd1655d1 wanted 09373696)
+--9161--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libc-2.31.so ..
+--9161--   .. CRC is valid
+--9161-- Reading syms from /usr/lib/x86_64-linux-gnu/libm-2.31.so
+--9161--   Considering /usr/lib/x86_64-linux-gnu/libm-2.31.so ..
+--9161--   .. CRC mismatch (computed b88da5c9 wanted 1658d783)
+--9161--   Considering /lib/x86_64-linux-gnu/libm-2.31.so ..
+--9161--   .. CRC mismatch (computed b88da5c9 wanted 1658d783)
+--9161--   Considering /usr/lib/debug/lib/x86_64-linux-gnu/libm-2.31.so ..
+--9161--   .. CRC is valid
+--9161-- REDIR: 0x4b00600 (libc.so.6:memmove) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff900 (libc.so.6:strncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00930 (libc.so.6:strcasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff220 (libc.so.6:strcat) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff960 (libc.so.6:rindex) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b01dd0 (libc.so.6:rawmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1ce60 (libc.so.6:wmemchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1c9a0 (libc.so.6:wcscmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00760 (libc.so.6:mempcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00590 (libc.so.6:bcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff890 (libc.so.6:strncmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff2d0 (libc.so.6:strcmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b006c0 (libc.so.6:memset) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1c960 (libc.so.6:wcschr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff7f0 (libc.so.6:strnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff3b0 (libc.so.6:strcspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00980 (libc.so.6:strncasecmp) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff350 (libc.so.6:strcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00ad0 (libc.so.6:memcpy@@GLIBC_2.14) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1e0d0 (libc.so.6:wcsnlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1c9e0 (libc.so.6:wcscpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff9a0 (libc.so.6:strpbrk) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff280 (libc.so.6:index) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4aff7b0 (libc.so.6:strlen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b08d20 (libc.so.6:memrchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b009d0 (libc.so.6:strcasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00550 (libc.so.6:memchr) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b1cab0 (libc.so.6:wcslen) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4affc60 (libc.so.6:strspn) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b008d0 (libc.so.6:stpncpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00870 (libc.so.6:stpcpy) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b01e10 (libc.so.6:strchrnul) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4b00a20 (libc.so.6:strncasecmp_l) redirected to 0x48311d0 (_vgnU_ifunc_wrapper)
+--9161-- REDIR: 0x4be8490 (libc.so.6:__strrchr_avx2) redirected to 0x483ea10 (rindex)
+--9161-- REDIR: 0x4afa260 (libc.so.6:malloc) redirected to 0x483b780 (malloc)
+--9161-- REDIR: 0x4be8660 (libc.so.6:__strlen_avx2) redirected to 0x483ef40 (strlen)
+--9161-- REDIR: 0x490bc10 (libstdc++.so.6:operator new(unsigned long)) redirected to 0x483bdf0 (operator new(unsigned long))
+--9161-- REDIR: 0x4beb670 (libc.so.6:__memcpy_avx_unaligned_erms) redirected to 0x48429f0 (memmove)
+--9161-- REDIR: 0x4afa850 (libc.so.6:free) redirected to 0x483c9d0 (free)
+--9161-- REDIR: 0x4afb000 (libc.so.6:realloc) redirected to 0x483df30 (realloc)
+--9161-- REDIR: 0x4be3b60 (libc.so.6:__strcmp_avx2) redirected to 0x483fed0 (strcmp)
+==9161== 
+==9161== Process terminating with default action of signal 6 (SIGABRT)
+==9161==    at 0x4AA318B: raise (raise.c:51)
+==9161==    by 0x4A82858: abort (abort.c:79)
+==9161==    by 0x48FF950: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==9161==    by 0x490B47B: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==9161==    by 0x490B4E6: std::terminate() (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==9161==    by 0x490B798: __cxa_throw (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==9161==    by 0x10C631: CTableReader::ReadFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (table.cpp:101)
+==9161==    by 0x10BCA9: CObjectTable::CObjectTable(char const*) (table.cpp:19)
+==9161==    by 0x121B2F: interactive() (main.cpp:82)
+==9161==    by 0x1221A5: main (main.cpp:232)
+==9161== 
+==9161== HEAP SUMMARY:
+==9161==     in use at exit: 349 bytes in 3 blocks
+==9161==   total heap usage: 7 allocs, 4 frees, 74,565 bytes allocated
+==9161== 
+==9161== Searching for pointers to 3 not-freed blocks
+==9161== Checked 116,000 bytes
+==9161== 
+==9161== 21 bytes in 1 blocks are still reachable in loss record 1 of 3
+==9161==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9161==    by 0x1152EA: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag) (basic_string.tcc:219)
+==9161==    by 0x1123E1: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct_aux<char const*>(char const*, char const*, std::__false_type) (basic_string.h:247)
+==9161==    by 0x1105E4: void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*) (basic_string.h:266)
+==9161==    by 0x10F7CA: std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) (basic_string.h:527)
+==9161==    by 0x10BC96: CObjectTable::CObjectTable(char const*) (table.cpp:19)
+==9161==    by 0x121B2F: interactive() (main.cpp:82)
+==9161==    by 0x1221A5: main (main.cpp:232)
+==9161== 
+==9161== 136 bytes in 1 blocks are possibly lost in loss record 2 of 3
+==9161==    at 0x483B7F3: malloc (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9161==    by 0x490A2E3: __cxa_allocate_exception (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.28)
+==9161==    by 0x10C613: CTableReader::ReadFromFile(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) (table.cpp:101)
+==9161==    by 0x10BCA9: CObjectTable::CObjectTable(char const*) (table.cpp:19)
+==9161==    by 0x121B2F: interactive() (main.cpp:82)
+==9161==    by 0x1221A5: main (main.cpp:232)
+==9161== 
+==9161== 192 bytes in 1 blocks are still reachable in loss record 3 of 3
+==9161==    at 0x483BE63: operator new(unsigned long) (in /usr/lib/x86_64-linux-gnu/valgrind/vgpreload_memcheck-amd64-linux.so)
+==9161==    by 0x121B1D: interactive() (main.cpp:82)
+==9161==    by 0x1221A5: main (main.cpp:232)
+==9161== 
+==9161== LEAK SUMMARY:
+==9161==    definitely lost: 0 bytes in 0 blocks
+==9161==    indirectly lost: 0 bytes in 0 blocks
+==9161==      possibly lost: 136 bytes in 1 blocks
+==9161==    still reachable: 213 bytes in 2 blocks
+==9161==         suppressed: 0 bytes in 0 blocks
+==9161== 
+==9161== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

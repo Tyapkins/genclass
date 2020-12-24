@@ -1,0 +1,6 @@
+./lru 56G ./gen_out/out_test10.txt 
+
+Total BHR: 0.002
+./lru 56G ./gen_out/out_test10.txt 
+
+Total BHR: 0.013

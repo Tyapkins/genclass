@@ -1,0 +1,78 @@
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.002
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.002
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.001
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.001
+./scache 1G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.000
+./scache 1G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.000
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.001
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.001
+./scache 56G 10 0 1 15 96 ./examples/table.txt ./gen_out/out_test1.txt 
+
+Total BHR: 0.001
+./scache 56G 10 0 1 15 96 ../step_ini/table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.005
+./scache 56G 10 0 1 15 96 ../step_ini/table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.005
+./scache 56G 10 0 1 15 96 ../step_ini/table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.005
+./scache 56G 10 0 1 15 96 ../step_ini/table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.005
+./scache 56G 10 0 1 15 96 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.002
+./scache 56G 10 0 1 15 96 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.002
+./scache 56G 10 0 1 5 32 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.011
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.011
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.011
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
+./scache 56G 10 0 1 1 1 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.792
+./scache 56G 10 0 1 15 96 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 0.792
+./scache 56G 10 0 1 15 96 ../table.json ../step_genout/gen_out/out_test1.txt 
+
+Total BHR: 1.000
