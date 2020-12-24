@@ -23,16 +23,27 @@ with open('../table.json', 'r') as fh:
 
 reqs  = list(data.keys());
 max_len = len(reqs)-1;
+all_motives_list = [""]
+
 for i in range(N+1):
     test = open('./gen_ini/test{}.ini'.format(i), "w");
     test.close();
+    
     for j in range (L):
-        res = "";
-        for k in range(K):
-            chosen_req = reqs[random.randint(0, max_len)]
-            chosen_dict = data[chosen_req];
-            chosen_attr = list(chosen_dict.keys())[random.randint(0,      len(chosen_dict)-2)]
-            res += "'{a}'='{b}',".format(a = chosen_attr, b =   chosen_dict[chosen_attr]);
+        res = ""
+        motive_list = [""]
+        subres = ""
+
+        while res in all_motives_list:
+            for k in range(K):
+                while subres in motive_list:
+                    chosen_req = reqs[random.randint(0, max_len)]
+                    chosen_dict = data[chosen_req];
+                    chosen_attr = list(chosen_dict.keys())[random.randint(0,      len(chosen_dict)-2)]
+                    subres = "'{a}'='{b}'".format(a = chosen_attr, b =   chosen_dict[chosen_attr])
+                    res += "{},".format(subres)
+                motive_list.append(subres)
+        all_motives_list.append(res)
         with open('./gen_ini/test{}.ini'.format(i), 'a') as f:
             f.write("[{}]\n".format(res[:-1]))
             max_others = random.choice((60, 120, 1440, 10080));
