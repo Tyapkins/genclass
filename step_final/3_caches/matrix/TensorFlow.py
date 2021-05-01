@@ -48,7 +48,7 @@ fig = plt.figure(figsize=(8, 8))
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(greens[:,0], greens[:,1], greens[:,2], zdir='y', color='g')
 ax.scatter(reds[:,0], reds[:,1], reds[:,2], zdir='y', color='r')
-ax.scatter(blues[:,0], blues[:,1], blues[:,2], zdir='y', color='b')
+ax.scatter(blues[:,0], blues[:,1], blues[:,2], zdir='xy', color='b')
 xs = [i[0] for i in MATRIX]
 ys = [i[1] for i in MATRIX]
 zs = [i[2] for i in MATRIX]

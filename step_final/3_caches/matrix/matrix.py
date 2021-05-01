@@ -1,7 +1,10 @@
 from numpy import array, zeros, diag
 from scipy.linalg import lu, qr, cholesky, svd, schur
-# define a square matrix
+from sklearn.decomposition import PCA
+import numpy as np
+
 matrix = []
+vals = []
 with open('full_table.txt', 'r') as res:
     for line in res:
 
@@ -10,9 +13,11 @@ with open('full_table.txt', 'r') as res:
         dot = b[2:5]
         for i in range(3):
             dot[i] = float(dot[i].replace(' ', ''))
-        #num = (b[-1]).replace(' ', '')
-        #print(dot)
-        matrix.append(dot)
+        num = (b[-1]).replace(' ', '')
+        if not (((dot[0] <= 0.26) or (dot[0] >= 0.272))
+        or ((dot[1] <= 0.26) or (dot[1] >= 0.272))):
+            vals.append(int(num))
+            matrix.append(dot)
 MATRIX = array(matrix)
 
 def do_QR(matr):
@@ -44,16 +49,45 @@ def do_SVD(matr):
     Sigma[:MATRIX.shape[1], :MATRIX.shape[1]] = diag(s)
     B = U.dot(Sigma.dot(VT))
     print(B)
-    return (U, s, VT)
+    return (U, Sigma, VT)
 
 def do_cholesky(matr):
     # useless in our case
     L = cholesky(matr)
     print(L)
-    reconstruct
+    #reconstruct
     B = L.dot(L.T)
     print(B)
     return L
 
+dim = 1
+mas_dim = [j for j in range(dim)]
 mas = do_SVD(MATRIX)
-print(mas[1])
+
+first_mat = mas[0][np.ix_([i for i in range(len(mas[0]))],mas_dim)]
+second_mat = mas[1][np.ix_(mas_dim,mas_dim)]
+third_mat = mas[2][np.ix_(mas_dim,[i for i in range(len(mas[2][0]))])]
+
+print(first_mat)
+print(second_mat)
+print(third_mat)
+with open('1_dim_fin.txt', 'w') as mat:
+    for line in first_mat:
+        mat.write(str(line)+'\n')
+    mat.write('\n\n\n')
+    mat.write(str(second_mat) + '\n\n')
+    mat.write(str(third_mat) + '\n\n')
+final_mat = mas[0].dot(mas[1].dot(mas[2]))
+count = 0
+with open('final.txt', 'w') as f:
+    for i, line in enumerate(final_mat):
+        f.write("{a} : {b}\n".format(a=MATRIX[i], b=line))
+        sub_count = 0
+        for j, num in enumerate(MATRIX[i]):
+            #print(num, line[j])
+            if (abs(num-line[j]) < 1.0e-07):
+                sub_count += 1
+        if (sub_count == 3):
+            count += 1
+print(count)
+#print(final_mat)
