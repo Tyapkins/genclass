@@ -32,7 +32,7 @@ size_patt_ini = re.compile(r"volume=(?P<num>[\d]+G)")
 max_mas = [10080, 1440, 1080, 120, 125]
 
 CHECK_DOTS_FROM = int(sys.argv[1]) if len(sys.argv) > 1 else 1001
-CHECK_DOTS_TO = int(sys.argv[2]) if len(sys.argv) > 2 else 1100
+CHECK_DOTS_TO = int(sys.argv[2]) if len(sys.argv) > 2 else 1500
 K = int(sys.argv[3]) if len(sys.argv) > 3 else 1
 known_dots = []
 dots = []
@@ -61,13 +61,13 @@ with open('res_table.txt', 'r') as res:
         mas = a[0].split(", ")
         new_mas = [int(a[1:-2]) for a in mas]
         known_dots.append(new_mas)
-for K in range(1, 51):
-    pred = open('./preds/prediction' + str(K) + '.txt', 'w')
-    for dot in dots:
-        super_num_metrics = {known_dots.index(a): metrics(dot,a) for a in known_dots}
-        sorted_metrics = sorted(super_num_metrics, key = lambda i: super_num_metrics[i])
-        pred_mas = [values[sorted_metrics[k]] for k in range(K)]
-        val = prediction(pred_mas)
-        pred.write("{a:30} : {b:4}\n".format(a = str(dot), b = val))
-    pred.close()
+
+pred = open('./preds/prediction' + str(K) + '.txt', 'w')
+for dot in dots:
+    super_num_metrics = {known_dots.index(a): metrics(dot,a) for a in known_dots}
+    sorted_metrics = sorted(super_num_metrics, key = lambda i: super_num_metrics[i])
+    pred_mas = [values[sorted_metrics[k]] for k in range(K)]
+    val = prediction(pred_mas)
+    pred.write("{a:30} : {b:4}\n".format(a = str(dot), b = val))
+pred.close()
 

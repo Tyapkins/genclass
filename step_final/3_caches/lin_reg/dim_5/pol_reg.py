@@ -27,7 +27,7 @@ Xs = []
 Ys = []
 known_dots, values = [], []
 
-with open('res_table.txt', 'r') as res:
+with open('./res_table.txt', 'r') as res:
     for line in res:
         b = line.split(";")
         num = (b[-1]).replace(' ', '')
@@ -43,22 +43,23 @@ with open('res_table.txt', 'r') as res:
 
 
 #x_poly = polynomial_features.fit_transform(x)
-
-model = make_pipeline(PolynomialFeatures(2), LinearRegression(normalize=True))
+a = PolynomialFeatures(2)
+model = make_pipeline(a, LinearRegression(normalize=True))
 new_Xs = np.array(known_dots)
-
+print(new_Xs.shape)
+print(a.fit_transform(new_Xs).shape)
 
 plt.figure(figsize=(20,10))
 
 model.fit(new_Xs,Ys)
 
-#exit(0)
+exit(0)
 
 
 pred_values, pred_Ys, pred_dots = [], [], []
 #exit(0)
 
-with open('true_table.txt', 'r') as res:
+with open('./true_table.txt', 'r') as res:
     for line in res:
         b = line.split(";")
         num = (b[-1]).replace(' ', '')
@@ -73,7 +74,7 @@ with open('true_table.txt', 'r') as res:
 pred_Xs = np.array(pred_dots)
 pred_Ys = model.predict(pred_Xs)
 print(pred_Ys)
-pred = open('pol_prediction.txt', 'w')
+pred = open('./pol_prediction.txt', 'w')
 pred.write('P : T\n\n\n')
 res = []
 for i, num in enumerate(pred_Ys):

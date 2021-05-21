@@ -28,7 +28,7 @@ Xs = []
 testY, Ys = [], []
 values = []
 
-with open('res_table.txt', 'r') as res:
+with open('./res_table.txt', 'r') as res:
     for line in res:
         b = line.split(";")
         #print(b)
@@ -111,7 +111,7 @@ pred_values, pred_Ys, pred_dots = [], [], []
 true_Y = []
 #exit(0)
 
-with open('true_table.txt', 'r') as res:
+with open('./true_table.txt', 'r') as res:
     for line in res:
 
         b = line.split(";")
@@ -173,7 +173,7 @@ for i in range(len(pred_Xs)):
         plt.plot(pred_Xs[i], pred_Ys[i], 'yo')
 plt.show()
 exit()
-pred = open('pol_prediction.txt', 'w')
+pred = open('./pol_prediction.txt', 'w')
 pred.write('P : T\n\n\n')
 res = []
 for i, num in enumerate(pred_Ys):

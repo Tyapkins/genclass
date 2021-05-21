@@ -4,7 +4,7 @@ K = int(sys.argv[1]) if len(sys.argv) > 1 else 3
 
 final_res = open('pred_res.txt', 'w')
 
-for K in range(1, 51):
+for K in range(1, 100):
     dots = []
     values = []
     with open('./preds/prediction' + str(K) + '.txt', 'r') as res:

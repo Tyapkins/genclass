@@ -1,18 +1,20 @@
 import json
 import re
 import sys
+import operator
+
 from random import choice
 from collections import Counter
 import numpy as np
-from ivis import Ivis
-from sklearn.preprocessing import MinMaxScaler
-from sklearn import datasets
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn import preprocessing
 from sklearn import datasets, linear_model
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.preprocessing import PolynomialFeatures
+from sklearn.pipeline import make_pipeline
+from sklearn.decomposition import PCA
+
 
 
 from matplotlib.pyplot import figure
@@ -22,7 +24,7 @@ Xs = []
 Ys = []
 known_dots, values = [], []
 
-with open('res_table.txt', 'r') as res:
+with open('./new_res.txt', 'r') as res:
     for line in res:
         b = line.split(";")
         num = (b[-1]).replace(' ', '')
@@ -33,22 +35,25 @@ with open('res_table.txt', 'r') as res:
         mas = a[0].split(", ")
         new_mas = [int(a[1:-2]) for a in mas]
         known_dots.append(new_mas)
-#print(known_dots)
-#print(Ys)
-model = LinearRegression(normalize=True)
-new_Xs = np.array(known_dots)
-#normalized_X = preprocessing.normalize(new_Xs)
-#standardized_X = preprocessing.scale(normalized_X)
-plt.figure(figsize=(20,10))
 
-#print(new_Xs)
+#polynomial_features = PolynomialFeatures(degree=2)
+
+
+#x_poly = polynomial_features.fit_transform(x)
+a = PolynomialFeatures(2)
+model = make_pipeline(a, LinearRegression(normalize=True))
+new_Xs = np.array(known_dots)
+print(new_Xs.shape)
+print(a.fit_transform(new_Xs).shape)
+
+plt.figure(figsize=(20,10))
 
 model.fit(new_Xs,Ys)
 
-print(model.coef_)
 pred_values, pred_Ys, pred_dots = [], [], []
+#exit(0)
 
-with open('true_table.txt', 'r') as res:
+with open('./new_true.txt', 'r') as res:
     for line in res:
         b = line.split(";")
         num = (b[-1]).replace(' ', '')
@@ -62,14 +67,15 @@ with open('true_table.txt', 'r') as res:
 
 pred_Xs = np.array(pred_dots)
 pred_Ys = model.predict(pred_Xs)
-#print(pred_Ys)
-pred = open('prediction.txt', 'w')
+print(pred_Ys)
+pred = open('./pol_prediction.txt', 'w')
 pred.write('P : T\n\n\n')
 res = []
 for i, num in enumerate(pred_Ys):
+    #print(num)
     pred.write(str(int(num>0))+' : ' + str(pred_values[i]) + '\n')
     res.append(int(num>0))
-#print(res)
+
 count = 0
 for i in range(len(res)):
     #print("{a} : {b}".format(a=res[i], b=pred_values[i]))
@@ -78,3 +84,4 @@ for i in range(len(res)):
 print(count)
 pred.write("\n\n RES:  " + str(count))
 pred.close()
+

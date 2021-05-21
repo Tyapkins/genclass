@@ -7,43 +7,18 @@ from random import choice
 from random import seed
 from collections import Counter
 import numpy as np
-from ivis import Ivis
-from sklearn.preprocessing import MinMaxScaler
-from sklearn import datasets
 import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-from sklearn import preprocessing
-from sklearn import datasets, linear_model
-from sklearn.metrics import mean_squared_error, r2_score
-from sklearn.preprocessing import PolynomialFeatures
-from sklearn.pipeline import make_pipeline
-from sklearn.decomposition import PCA
+from sklearn import tree as Tree
 
 from sklearn.tree import DecisionTreeClassifier
 
 RSEED = 100
 
-tree = DecisionTreeClassifier(random_state=RSEED)
+tree = DecisionTreeClassifier(random_state=RSEED, max_depth=3)
 
 MAX_VAL = 2
 #seed(100)
 
-def metrics(a, b):
-    res = 0
-    for i, num in enumerate(a):
-        res += ((num-b[i])/(max_mas[i]))**2
-    return res
-    
-   
-#def prediction(values):
-#    mas = [0 for i in range(MAX_VAL+1)]
-#    for val in values:
-#        mas[val] += 1
-#    new_mas = []
-#    for i in range(MAX_VAL+1):
-#        if mas[i] == max(mas):
-#            new_mas.append(i)
-#    return choice(new_mas)
 
 patt = re.compile(r"\'.*\'")
 time_patt_ini = re.compile(r"(period|length|shift|attack)=(?P<num>[\d]+m)")
@@ -51,7 +26,7 @@ size_patt_ini = re.compile(r"volume=(?P<num>[\d]+G)")
 max_mas = [10080, 1440, 1080, 120, 125]
 
 CHECK_DOTS_FROM = int(sys.argv[1]) if len(sys.argv) > 1 else 1001
-CHECK_DOTS_TO = int(sys.argv[2]) if len(sys.argv) > 2 else 1100
+CHECK_DOTS_TO = int(sys.argv[2]) if len(sys.argv) > 2 else 1500
 K = int(sys.argv[3]) if len(sys.argv) > 3 else 1
 known_dots = []
 dots = []
@@ -96,12 +71,9 @@ with open('true_table.txt', 'r') as f:
         b = line.split(";")
         num = (b[-1]).replace(' ', '')
         pred_val.append(int(num))
-        #a = patt.search(line)
-        #mas = a[0].split(", ")
-        #new_mas = [int(a[1:-2]) for a in mas]
-        #known_dots.append(new_mas)
 
 print('Model Accuracy:', tree.score(dots, pred_val))
-
+Tree.plot_tree(tree)
+plt.show()
 #new_y = tree.predict(dots)
 #print(new_y)
