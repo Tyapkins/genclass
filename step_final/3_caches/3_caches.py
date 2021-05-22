@@ -2,7 +2,7 @@ import sys
 import re
 
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1
-M = int(sys.argv[2]) if len(sys.argv) > 2 else 2
+M = int(sys.argv[2]) if len(sys.argv) > 2 else 1000
 table_name = ("./tables/table_"+sys.argv[3]+"_") if len(sys.argv) > 3 else "final_table"
 
 patt = re.compile("(\d+) \: ((0|1)\.\d+)")

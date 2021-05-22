@@ -1,9 +1,7 @@
-import json
 import re
 import sys
 from random import choice
 from random import seed
-import numpy as np
 
 from sklearn.decomposition import PCA
 

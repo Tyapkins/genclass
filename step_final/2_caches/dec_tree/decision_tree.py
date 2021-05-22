@@ -1,11 +1,5 @@
-import json
 import re
 import sys
-import operator
-
-from random import choice
-from random import seed
-from collections import Counter
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn import tree as Tree
@@ -17,7 +11,6 @@ RSEED = 100
 tree = DecisionTreeClassifier(random_state=RSEED, max_depth=3)
 
 MAX_VAL = 2
-#seed(100)
 
 
 patt = re.compile(r"\'.*\'")
@@ -75,5 +68,3 @@ with open('true_table.txt', 'r') as f:
 print('Model Accuracy:', tree.score(dots, pred_val))
 Tree.plot_tree(tree)
 plt.show()
-#new_y = tree.predict(dots)
-#print(new_y)

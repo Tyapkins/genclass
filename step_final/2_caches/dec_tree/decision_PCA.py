@@ -12,7 +12,6 @@ RSEED = 100
 tree = DecisionTreeClassifier(random_state=RSEED, max_depth=3)
 
 MAX_VAL = 2
-#seed(100)
 
 
 patt = re.compile(r"\'.*\'")
@@ -62,9 +61,6 @@ X = np.array(X_2D[:len(known_dots)])
 y = np.array(values)
 
 new_X = X_2D[len(known_dots):]
-#print(len(new_X))
-#print(len(X))
-#exit(0)
 
 pred_val = []
 
@@ -82,5 +78,3 @@ with open('true_table.txt', 'r') as f:
 print('Model Accuracy:', tree.score(new_X, pred_val))
 Tree.plot_tree(tree)
 plt.show()
-#new_y = tree.predict(dots)
-#print(new_y)
